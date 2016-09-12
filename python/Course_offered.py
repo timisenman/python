@@ -102,6 +102,18 @@ def when_offered(courses, course):
 			offered.append(course)
 	return offered
 
+def involved(courses, person):
+	classes = {}
+	for hexamester in courses:
+		for course in courses[hexamester]: #python doesn't care what's in the brackets here
+			for key in courses[hexamester][course]: #it only cares about the position of data
+				if courses[hexamester][course][key] == person: #so the brackets will call whatever
+					if hexamester in classes: #data is in that place of the dictionary
+						classes[hexamester].append(course) #this says, if the hexamester is in the list already, add its associated course.
+					else: #and if not
+						classes[hexamester] = [course] #add it to the first position of the dict
+	return classes #then bring it on home
+
 
 print is_offered(courses, 'cs101', 'apr2012')
 #>>> True

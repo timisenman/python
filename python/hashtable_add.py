@@ -20,6 +20,27 @@ def make_hashtable(nbuckets):
         table.append([])
     return table #creates something like [[],[],[]]
 
+def bucket_find(bucket,key):
+    for entry in bucket:
+        if entry[0] == key:
+            return entry
+    return None
+
+def hashtable_update(htable,key,value):
+    bucket = hashtable_get_bucket(htable,key)
+    entry = bucket_find(bucket,key)
+    if entry:
+        entry[1] = value
+    else:
+        htable.append([key,value])
+
+def hashtable_lookup(index,keyword):
+    entry = bucket_find(hashtable_get_bucket(htable,key))
+    if entry:
+      return entry[1]
+    else:
+        return None
+
 table = make_hashtable(5)
 hashtable_add(table,'Bill', 17)
 hashtable_add(table,'Coach', 4)

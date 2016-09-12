@@ -28,3 +28,7 @@ elements[‘He’] = {‘name’: ‘Helium’, ‘number’: 2, ‘weight’: 4
 print elements['H']['name']
 #>>>Hydrogen
 
+#If you want to change a list to a dictionary, just change the bracket types:
+index = [] #to...
+index = {}
+

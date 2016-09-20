@@ -1,9 +1,10 @@
-# def fibonacci(n):
-#     if n==0:
-#         return 0
-#     if n==1:
-#         return 1
-#     return fibonacci(n-1) + fibonacci(n-2)
+def fibonacci(n):
+    if n==0:
+        return 0
+    if n==1:
+        return 1
+	else:
+    	return fibonacci(n-1) + fibonacci(n-2)
     #the function will work like this, for fibonacci(10):
     # fibonacci(10-1) + fibonacci(10-2) = 9 + 8
     # fibonacci(9-1) + fibonacci(9-2) = 8 + 7
@@ -15,6 +16,8 @@
     # fibonacci(3-1) + fibonacci(3-2) = 2 + 1
     # fibonacci(2-1) + fibonacci(2-2) = 1 + 0
     # and once n==1, will just add 1, and when 0, add 0.
+
+
 
 
 def fibonacci(n):
@@ -32,3 +35,18 @@ print fibonacci(1)
 #>>> 1
 print fibonacci(15)
 #>>> 610
+
+#Rabbits
+#write a function that counts the number of rabbits at that year, except for the 6th year,
+#when some rabbits die
+
+# def rabbits(n):
+#     if n < 0:
+#         return 0
+#     if n==1 or n==2:
+#         return 1
+#     else:
+#         return rabbits(n-1) + rabbits(n-2) - rabbits(n-5)
+#
+# print rabbits(10)
+# #>>> 35

@@ -1,3 +1,4 @@
+
 # [Double Gold Star] Memoization is a way to make code run faster by saving
 # previously computed results.  Instead of needing to recompute the value of an
 # expression, a memoized computation first looks for the value in a cache of
@@ -11,6 +12,19 @@
 # but should only evaluate it if it has not been previously called.
 
 def cached_execution(cached, proc, proc_input):
+#my second attempt
+    # if proc not in cache:
+    #     cached_res = proc(proc_input)
+    #     cache[proc].append([proc][proc_input])
+    # return cached_res
+
+#answer
+    if proc_input not in cache:
+        cache[proc_input] = proc(proc_input)
+    return cache[proc_input]
+#so I was close. My understanding of manipulating Dicts is still lacking. 
+#the course suggests using '=' instead of '.append'. That seems to be one of the 
+#few differences in our solutions. 
 
 
 

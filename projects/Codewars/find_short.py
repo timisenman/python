@@ -18,6 +18,5 @@ def find_short(string):
 	#bitcoin
 
 
-
 s = "bitcoin take over the world maybe who knows perhaps"
 print find_short(s)

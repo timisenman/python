@@ -6,7 +6,7 @@ def russian(a,b):
     while x > 0:
         if x % 2 == 1: 
 	        z = z + y
-	        count += 1
+	        # count += 1
 	        y = y << 1
 	        x = x >> 1
     	return z

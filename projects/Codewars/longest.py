@@ -1,13 +1,10 @@
-letters = "abcdefghijklmnopqrstuvwxyz"
 def longest(a,b):
-    lis = []
-    for i in a and b:
-    	print i
-        lis.append(i)
-        #still must solve for duplicates!
-    lis.sort()
-    lis = ''.join(set(lis))
-    return lis
+	letters = "abcdefghijklmnopqrstuvwxyz"
+	result = ""
+    for c in letter:
+    	if c in a and in b:
+    		result += c
+    return result
 
 print longest("aretheyhere", "yestheyarehere")
 

@@ -9,9 +9,9 @@ class Tree:
         return str(self.cargo)
 
 
-def total(tree):
-    if tree == None: return 0
-    return total(tree.left) + total(tree.right) + tree.cargo
+    def total(tree):
+        if tree == None: return 0
+        return total(tree.left) + total(tree.right) + tree.cargo
 
 left = Tree(2)
 right = Tree(3)

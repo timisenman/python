@@ -29,33 +29,33 @@ node3.next = node3
 
 
 
-# def printList(node):
-#         lis = []
-#         while node:
-#             lis.append(node.cargo)
-#             node, 
-#             node = node.next
-#         print lis
+def printList(node):
+        lis = []
+        while node:
+            lis.append(node.cargo)
+            node, 
+            node = node.next
+        print lis
 
 
-# printList(node3)
+printList(node3)
 
-# class LinkedLists:
-#     def __init__(self):
-#         self.length = 0
-#         self.head = None
+class LinkedLists:
+    def __init__(self):
+        self.length = 0
+        self.head = None
 
-#     def printBackward(self):
-#         print "[",
-#         if self.head != None:
-#             self.head.printBackward()
-#         print "]",
+    # def printBackward(self):
+    #     print "[",
+    #     if self.head != None:
+    #         self.head.printBackward()
+    #     print "]",
 
-#     def addFirst(self, cargo):
-#         node = Node(cargo)
-#         node.next = self.head
-#         self.head = node
-#         self.length = self.length + 1
+    def addFirst(self, cargo):
+        node = Node(cargo)
+        node.next = self.head
+        self.head = node
+        self.length = self.length + 1
     
     
 # link = LinkedLists()
